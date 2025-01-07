@@ -36,7 +36,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
     />
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Web Fonts  -->
     <link
       id="googleFonts"
@@ -95,14 +95,25 @@
 
     .header-logo {
       img {
-        width: 10rem;
+        width: 18vw;
+        min-width: 10rem;
       }
     }
   </style>
   <body
     data-plugin-section-scroll
-    data-plugin-options="{'targetClass': '.section-scroll', 'dotsClass': 'section-scroll-dots-navigation-colored', 'changeHeaderLogo': true, 'headerLogoDark': './genesis-red-logo.png', 'headerLogoLight': './genesis-black-logo.png'}"
+    data-plugin-options="{'targetClass': '.section-scroll', 'dotsClass': 'section-scroll-dots-navigation-colored', 'changeHeaderLogo': true, 'headerLogoDark': './genesis-red-logo.png', 'headerLogoLight': './genesis-white-logo.png'}"
   >
+    <!-- <div class="loader-bg">
+      <lottie-player
+        src="./assets/loader.lottie.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div> -->
     <div class="body bg-dark">
       <header
         id="header"
@@ -116,7 +127,7 @@
                 <div class="header-row">
                   <div class="header-logo">
                     <a href="index.html">
-                      <img alt="gen" src="./genesis-black-logo.png" />
+                      <img alt="gen" src="./genesis-white-logo.png" />
                     </a>
                   </div>
                 </div>
@@ -130,11 +141,15 @@
                       class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-transition header-nav-main-effect-2 header-nav-main-sub-effect-1 px-3"
                     >
                       <nav class="collapse">
-                        <ul class="nav nav-pills" id="mainNav">
+                        <ul class="nav nav-pills show-on-scroll" id="mainNav">
                           <li><a href="index.html">HOME</a></li>
-                          <li><a href="#1" data-nav-id="1">SERVICES</a></li>
-                          <li><a href="#2" data-nav-id="2">ABOUT US</a></li>
-                          <li><a href="#5" data-nav-id="5">CONTACT US</a></li>
+                          <li><a href="#1" data-nav-id="1">WHAT WE DO</a></li>
+                          <li><a href="#2" data-nav-id="2">OUR STORY</a></li>
+                          <li><a href="#2" data-nav-id="2">OUR CLIENTS</a></li>
+                          <li>
+                            <a href="#4" data-nav-id="3">OUR REPUTATION</a>
+                          </li>
+                          <li><a href="#5" data-nav-id="5">Get IN TOUCH</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -155,15 +170,15 @@
                       <ul
                         class="header-social-icons social-icons d-none d-sm-block social-icons-icon-light social-icons-clean ms-0"
                       >
-                        <li class="social-icons-facebook">
+                        <li class="social-icons-linkedin">
                           <a
-                            href="http://www.facebook.com/"
+                            href="http://www.linkedin.com/"
                             target="_blank"
                             title="Facebook"
-                            ><i class="fab fa-facebook-f"></i
+                            ><i class="fab fa-linkedin-in"></i
                           ></a>
                         </li>
-                        <li class="social-icons-instagram">
+                        <!-- <li class="social-icons-instagram">
                           <a
                             href="http://www.instagram.com/"
                             target="_blank"
@@ -175,7 +190,7 @@
                           <a href="http://www.x.com/" target="_blank" title="X"
                             ><i class="fab fa-x-twitter"></i
                           ></a>
-                        </li>
+                        </li> -->
                       </ul>
                     </div>
                   </div>
@@ -196,17 +211,25 @@
             class="position-absolute w-100 h-100 top-0 left-0 appear-animation"
             data-appear-animation="slideInUp"
             style="
-              background-image: url(./section1img.jpg);
+              /* background-image: url(./section1img.jpg); */
               background-size: cover;
               background-position: center;
             "
           ></div>
-          <div class="container-fluid h-100">
+          <div
+            class="container-fluid h-100"
+            style="background-image: url(./section1img.jpg)"
+          >
             <div id="hero-part" class="row h-100">
-              <div class="col-md-6 p-0">
-                <div class="row h-100">
+              <div
+                class="col-md-6 p-0"
+                style="
+                  background-image: linear-gradient(180deg, #ff0000, #4c0202);
+                "
+              >
+                <div class="row h-100" style="background: transparent">
                   <div
-                    class="col-12 bg-secondary h-50 p-0 px-4 px-lg-0 appear-animation"
+                    class="col-12 h-50 p-0 px-4 px-lg-0 appear-animation"
                     data-appear-animation="fadeInRightShorter"
                     data-appear-animation-delay="1200"
                   >
@@ -227,9 +250,10 @@
                     </div>
                   </div>
                   <div
-                    class="col-12 bg-primary h-50 p-0 px-4 px-lg-0 appear-animation"
+                    class="col-12 h-50 p-0 px-4 px-lg-0 appear-animation"
                     data-appear-animation="fadeInRightShorter"
                     data-appear-animation-delay="1000"
+                    style="background: transparent"
                   >
                     <div class="row justify-content-end h-100">
                       <div class="col-half-section col-half-section-left">
@@ -252,7 +276,7 @@
                               <a
                                 href="#"
                                 class="btn btn-dark font-weight-bold text-3 rounded-0 px-5 btn-py-3 align-items-center d-inline-flex"
-                                >GET STARTED NOW
+                                >Welcome to Your Future
                                 <i class="fas fa-arrow-right text-5 ms-3"></i
                               ></a>
                             </div>
@@ -268,11 +292,11 @@
         </section>
 
         <section
-          class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0"
+          class="section services section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0"
           data-section-scroll-title="OUR SERVICES"
           data-section-scroll-header-color="grey"
           style="
-            background-image: url('img/bg-corporate-20-2.jpg');
+            /* background-image: url('img/bg-corporate-20-2.jpg'); */
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -284,8 +308,9 @@
                 class="font-weight-extra-bold text-color-light text-md-10 text-lg-12 line-height-2 mb-4 pb-2 appear-animation animated appear-animation-visible"
                 data-appear-animation="fadeInRightShorter"
                 data-appear-animation-delay="1400"
+                style="text-align: center; margin-top: 1rem"
               >
-                Our Services
+                Our Winning Portfolio
               </h1>
               <div class="col-md-12">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
@@ -306,7 +331,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col" style="margin: 0">
                     <div class="feature-box feature-box-style-4 my-4 py-1">
                       <div class="feature-box-icon mb-2">
                         <i class="icons icon-layers text-11"></i>
@@ -363,16 +388,19 @@
           data-section-scroll-title="ABOUT US"
           data-section-scroll-header-color="dark"
         >
-          <div class="container h-100 py-5 py-md-0">
+          <div class="container h-100 py-5 py-md-0" style="max-width: 100%">
             <div class="row align-items-center h-100">
-              <div class="col">
+              <div class="col" style="margin-top: 3rem">
                 <div class="row justify-content-center mb-4">
-                  <div class="col-md-9 col-lg-6 text-center">
+                  <div
+                    class="col-md-9 col-lg-6 text-center"
+                    style="width: 100%"
+                  >
                     <div class="overflow-hidden">
                       <span
                         class="d-block text-4 line-height-3 appear-animation"
                         data-appear-animation="maskUp"
-                        >Meet Our Perfect Team</span
+                        >Meet Our Rockstars</span
                       >
                     </div>
                     <div class="overflow-hidden mb-3">
@@ -381,7 +409,7 @@
                         data-appear-animation="maskUp"
                         data-appear-animation-delay="200"
                       >
-                        Learn about our Rockstars
+                        Learn About Our Magic
                       </h2>
                     </div>
                     <p
@@ -397,81 +425,78 @@
                 </div>
                 <div class="row">
                   <div
-                    class="col-md-4 mb-5 mb-md-0 appear-animation"
+                    class="col-md-4 mb-5 mb-md-0 appear-animation team-member"
                     data-appear-animation="fadeInLeftShorter"
                     data-appear-animation-delay="900"
                   >
-                    <a href="#"
-                      ><img
-                        src="img/team/team-1.jpg"
-                        class="img-fluid hover-effect-2 mb-3"
-                        alt=""
-                    /></a>
+                    <img
+                      src="img/team/team-1.jpg"
+                      class="img-fluid hover-effect-2 mb-3"
+                      alt=""
+                    />
                     <span class="text-color-primary text-2">Principal CEO</span>
                     <h4 class="font-weight-bold line-height-1 mb-3 mt-1">
                       Nabeel H
                     </h4>
-                    <p class="text-4 line-height-7 mb-3">
+                    <!-- <p class="text-4 line-height-7 mb-3">
                       With over 20 years of experience, Nabeel leads the firm
                       with a vision to create future-proof organizations.
-                    </p>
+                    </p> -->
                     <a
                       href="#"
                       class="text-color-dark text-color-hover-primary font-weight-bold text-decoration-none text-2"
-                      >VIEW MORE <i class="fas fa-arrow-right ms-1"></i
+                      >KNOW THEM <i class="fas fa-arrow-right ms-1"></i
                     ></a>
                   </div>
                   <div
-                    class="col-md-4 mb-5 mb-md-0 appear-animation"
+                    class="col-md-4 mb-5 mb-md-0 appear-animation team-member"
                     data-appear-animation="fadeIn"
                     data-appear-animation-delay="600"
                   >
-                    <a href="#"
-                      ><img
-                        src="img/team/team-8.jpg"
-                        class="img-fluid hover-effect-2 mb-3"
-                        alt=""
-                    /></a>
+                    <img
+                      src="img/team/team-8.jpg"
+                      class="img-fluid hover-effect-2 mb-3"
+                      alt=""
+                    />
                     <span class="text-color-primary text-2">Advisory Lead</span>
                     <h4 class="font-weight-bold line-height-1 mb-3 mt-1">
                       Nemaisa
                     </h4>
-                    <p class="text-4 line-height-7 mb-3">
+                    <!-- <p class="text-4 line-height-7 mb-3">
                       Passionate about empowering businesses and communities,
                       Nemaisa specializes in impactful private sector
                       strategies.
-                    </p>
+                    </p> -->
                     <a
                       href="#"
                       class="text-color-dark text-color-hover-primary font-weight-bold text-decoration-none text-2"
-                      >VIEW MORE <i class="fas fa-arrow-right ms-1"></i
+                      >KNOW THEM <i class="fas fa-arrow-right ms-1"></i
                     ></a>
                   </div>
                   <div
-                    class="col-md-4 appear-animation"
+                    class="col-md-4 appear-animation team-member"
                     data-appear-animation="fadeInRightShorter"
                     data-appear-animation-delay="900"
                   >
-                    <a href="#"
-                      ><img
-                        src="img/team/team-7.jpg"
-                        class="img-fluid hover-effect-2 mb-3"
-                        alt=""
-                    /></a>
+                    <img
+                      src="img/team/team-7.jpg"
+                      class="img-fluid hover-effect-2 mb-3"
+                      alt=""
+                    />
                     <span class="text-color-primary text-2"
                       >HR & Executive Search Lead</span
                     >
                     <h4 class="font-weight-bold line-height-1 mb-3 mt-1">
                       Nicholas
                     </h4>
-                    <p class="text-4 line-height-7 mb-3">
+                    <!-- <p class="text-4 line-height-7 mb-3">
                       Nicholas ensures top talent placement and drives human
                       resource excellence for our clients.
-                    </p>
+                    </p> -->
                     <a
                       href="#"
                       class="text-color-dark text-color-hover-primary font-weight-bold text-decoration-none text-2"
-                      >VIEW MORE <i class="fas fa-arrow-right ms-1"></i
+                      >KNOW THEM <i class="fas fa-arrow-right ms-1"></i
                     ></a>
                   </div>
                 </div>
@@ -481,16 +506,16 @@
         </section>
 
         <section
-          class="section section-background section-scroll overlay overlay-show overlay-color-primary overlay-op-9 border-0 m-0"
+          class="section services section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0"
           data-section-scroll-title="TESTIMONIALS"
-          data-section-scroll-header-color="light"
+          data-section-scroll-header-color="grey"
           style="
-            background-image: url(img/bg-corporate-20-3.jpg);
+            /* background-image: url(img/bg-corporate-20-3.jpg); */
             background-size: cover;
             background-position: center;
           "
         >
-          <div class="container h-100 py-5 py-md-0">
+          <div class="container h-100 py-5 py-md-0" style="margin-top: 4rem">
             <div class="row align-items-center h-100">
               <div class="col">
                 <div class="row">
@@ -502,8 +527,8 @@
                       >
                         <span
                           class="text-color-light text-4 line-height-3 opacity-9"
-                          >WHAT THEY SAY ABOUT US</span
-                        >
+                          >OUR RECORD of ACHIEVMENT
+                        </span>
                       </div>
                     </div>
                     <div class="overflow-hidden mb-5">
@@ -512,7 +537,7 @@
                         data-appear-animation="maskUp"
                         data-appear-animation-delay="200"
                       >
-                        Our Customers Can't Resist
+                        Our Clients Can't Resist
                       </h2>
                     </div>
                   </div>
@@ -661,7 +686,7 @@
                         >
                       </div>
                     </div>
-                    <div
+                    <!-- <div
                       class="appear-animation"
                       data-appear-animation="fadeInUpShorter"
                       data-appear-animation-delay="1500"
@@ -688,7 +713,7 @@
                           >50%</span
                         >
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>

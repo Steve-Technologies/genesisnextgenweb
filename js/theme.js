@@ -7673,7 +7673,7 @@ window.theme.fn = {
     targetClass: ".section",
     dotsNav: true,
     changeHeaderLogo: true,
-    headerLogoDark: "../genesis-black-logo.png",
+    headerLogoDark: "../genesis-white-logo.png",
     headerLogoLight: "../genesis-red-logo.png",
   };
 
