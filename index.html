@@ -92,10 +92,13 @@
         width: 100vw;
       }
     }
+    #header {
+      height: fit-content !important;
+    }
 
     .header-logo {
       img {
-        width: 18vw;
+        width: 13vw;
         min-width: 10rem;
       }
     }
@@ -118,7 +121,7 @@
       <header
         id="header"
         class="header-transparent"
-        style="background-color: white; height: fit-content"
+        style="background-color: white"
         data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 0}"
       >
         <div class="header-body border-top-0 box-shadow-none">
@@ -270,14 +273,14 @@
                     </div>
                     <div class="row justify-content-center h-100">
                       <div
-                        class="col-half-section col-half-section-left"
+                        class="col-half-section-left"
                         style="
                           display: flex;
                           justify-content: center;
                           align-items: center;
                         "
                       >
-                        <div class="row">
+                        <div class="row" style="width: 80%">
                           <div class="col">
                             <h1
                               class="font-weight-extra-bold text-color-light text-md-10 text-lg-12 line-height-2 mb-4 pb-2 appear-animation"
@@ -317,6 +320,37 @@
                               ></a>
                             </div>
                           </div>
+                          <div
+                            class="col"
+                            style="
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                            "
+                          >
+                            <h2
+                              class="font-weight-extra-bold text-color-light text-md-10 text-lg-12 line-height-2 mb-4 pb-2 appear-animation"
+                              data-appear-animation="fadeInRightShorter"
+                              data-appear-animation-delay="1400"
+                              style="
+                                text-align: center;
+                                margin-bottom: 0 !important;
+                              "
+                            >
+                              Our Divisions
+                            </h2>
+                            <p
+                              class="text-color-light text-4 my-4 pt-2 appear-animation"
+                              data-appear-animation="fadeInRightShorter"
+                              data-appear-animation-delay="1600"
+                              style="text-align: center"
+                            >
+                              ADVISORY & CONSULTING | RECRUITMENT | TRAINING AND
+                              DEVELOPMENT | SMALL AND MEDIUM ENTERPRISE
+                              DEVELOPMENT
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -328,11 +362,11 @@
         </section>
 
         <section
-          class="section services section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0"
+          class="section services section-scroll bg-light section-background border-0 m-0"
           data-section-scroll-title="OUR SERVICES"
           data-section-scroll-header-color="grey"
           style="
-            /* background-image: url('img/bg-corporate-20-2.jpg'); */
+            background-color: white;
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -344,7 +378,11 @@
                 class="font-weight-extra-bold text-color-light text-md-10 text-lg-12 line-height-2 mb-4 pb-2 appear-animation animated appear-animation-visible"
                 data-appear-animation="fadeInRightShorter"
                 data-appear-animation-delay="1400"
-                style="text-align: center; margin-top: 1rem"
+                style="
+                  text-align: center;
+                  margin-top: 1rem;
+                  color: black !important;
+                "
               >
                 Our Winning Portfolio
               </h1>
@@ -353,20 +391,18 @@
                   <div class="col">
                     <div class="feature-box feature-box-style-4">
                       <div class="feature-box-icon mb-2">
-                        <i
-                          class="icons icon-screen-smartphone text-11 position-relative right-9"
-                        ></i>
+                        <i class="fa-regular fa-comment"></i>
                       </div>
                       <div class="feature-box-info">
                         <h4
                           class="mt-2 mb-2 text-color-light"
-                          style="font-size: 1.5rem"
+                          style="font-size: 1.5rem; color: black !important"
                         >
                           Advisory & Consulting
                         </h4>
                         <p
                           class="text-color-light opacity-5 pe-4 mb-4"
-                          style="font-size: 1.05rem"
+                          style="font-size: 1.05rem; color: black !important"
                         >
                           Lorem ipsum dolor sit amet, coctetur adipiscing elit.
                         </p>
@@ -376,18 +412,18 @@
                   <div class="col" style="margin: 0">
                     <div class="feature-box feature-box-style-4 my-4 py-1">
                       <div class="feature-box-icon mb-2">
-                        <i class="icons icon-layers text-11"></i>
+                        <i class="fa-solid fa-person-chalkboard"></i>
                       </div>
                       <div class="feature-box-info">
                         <h4
                           class="mt-2 mb-2 text-color-light"
-                          style="font-size: 1.5rem"
+                          style="font-size: 1.5rem; color: black !important"
                         >
                           Training and Development
                         </h4>
                         <p
                           class="text-color-light opacity-5 pe-4 mb-4"
-                          style="font-size: 1.05rem"
+                          style="font-size: 1.05rem; color: black !important"
                         >
                           Lorem ipsum dolor sit amet, coctetur adipiscing elit.
                         </p>
@@ -397,18 +433,18 @@
                   <div class="col">
                     <div class="feature-box feature-box-style-4">
                       <div class="feature-box-icon mb-2">
-                        <i class="icons icon-magnifier text-11"></i>
+                        <i class="fa-regular fa-building"></i>
                       </div>
                       <div class="feature-box-info">
                         <h4
                           class="mt-2 mb-2 text-color-light"
-                          style="font-size: 1.5rem"
+                          style="font-size: 1.5rem; color: black !important"
                         >
                           Small & Medium Enterprise Development
                         </h4>
                         <p
                           class="text-color-light opacity-5 pe-4 mb-4"
-                          style="font-size: 1.05rem"
+                          style="font-size: 1.05rem; color: black !important"
                         >
                           Lorem ipsum dolor sit amet, coctetur adipiscing elit.
                         </p>
@@ -551,7 +587,7 @@
         </section>
 
         <section
-          class="section services section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0"
+          class="section services section-scroll section-background border-0 m-0"
           data-section-scroll-title="TESTIMONIALS"
           data-section-scroll-header-color="grey"
           style="
@@ -571,14 +607,14 @@
                         data-appear-animation="maskUp"
                       >
                         <span
-                          class="text-color-light text-4 line-height-3 opacity-9"
+                          class="text-color-dark text-4 line-height-3 opacity-9"
                           >OUR RECORD of ACHIEVMENT
                         </span>
                       </div>
                     </div>
                     <div class="overflow-hidden mb-5">
                       <h2
-                        class="text-color-light font-weight-bold text-10 pb-2 mt-2 mb-0 appear-animation"
+                        class="text-color-dark font-weight-bold text-10 pb-2 mt-2 mb-0 appear-animation"
                         data-appear-animation="maskUp"
                         data-appear-animation-delay="200"
                       >
@@ -608,7 +644,7 @@
                           </div>
                           <blockquote>
                             <p
-                              class="text-color-light text-5 line-height-7 mb-0"
+                              class="text-color-dark text-5 line-height-7 mb-0"
                             >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Sed eget risus porta, tincidunt turpis at,
@@ -620,7 +656,7 @@
                           <div class="testimonial-author">
                             <p>
                               <strong
-                                class="font-weight-extra-bold text-color-light text-2"
+                                class="font-weight-extra-bold text-color-dark text-2"
                                 >- John Smith. Okler</strong
                               >
                             </p>
@@ -638,7 +674,7 @@
                           </div>
                           <blockquote>
                             <p
-                              class="text-color-light text-5 line-height-7 mb-0"
+                              class="text-color-dark text-5 line-height-7 mb-0"
                             >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Sed eget risus porta, tincidunt turpis at,
@@ -649,7 +685,7 @@
                           <div class="testimonial-author">
                             <p>
                               <strong
-                                class="font-weight-extra-bold text-color-light text-2"
+                                class="font-weight-extra-bold text-color-dark text-2"
                                 >- John Smith. Okler</strong
                               >
                             </p>
@@ -669,19 +705,18 @@
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <h4
-                      class="text-color-light text-center text-4 pb-2 mb-4 appear-animation"
-                      data-appear-animation="fadeInUpShorter"
-                      data-appear-animation-delay="900"
+                      class="text-color-dark text-center text-4 pb-2 mb-4 appear-animation"
+                      data-appear-animation=""
+                      data-appear-animation-delay=""
                     >
                       OUR SKILLS
                     </h4>
                     <div
                       class="appear-animation"
-                      data-appear-animation="fadeInUpShorter"
-                      data-appear-animation-delay="1100"
+                      data-appear-animation=""
+                      data-appear-animation-delay=""
                     >
-                      <label
-                        class="text-color-light font-weight-semibold text-2"
+                      <label class="text-color-dark font-weight-semibold text-2"
                         >DESIGN</label
                       >
                       <div
@@ -698,18 +733,17 @@
                           <span class="sr-only">90% Complete</span>
                         </div>
                         <span
-                          class="progress-bar-value text-color-light opacity-8"
+                          class="progress-bar-value text-color-dark opacity-8"
                           >90%</span
                         >
                       </div>
                     </div>
                     <div
                       class="appear-animation"
-                      data-appear-animation="fadeInUpShorter"
-                      data-appear-animation-delay="1300"
+                      data-appear-animation=""
+                      data-appear-animation-delay=""
                     >
-                      <label
-                        class="text-color-light font-weight-semibold text-2"
+                      <label class="text-color-dark font-weight-semibold text-2"
                         >DEVELOPMENT</label
                       >
                       <div
@@ -726,7 +760,7 @@
                           <span class="sr-only">80% Complete</span>
                         </div>
                         <span
-                          class="progress-bar-value text-color-light opacity-8"
+                          class="progress-bar-value text-color-dark opacity-8"
                           >80%</span
                         >
                       </div>
