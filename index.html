@@ -102,7 +102,7 @@
   </style>
   <body
     data-plugin-section-scroll
-    data-plugin-options="{'targetClass': '.section-scroll', 'dotsClass': 'section-scroll-dots-navigation-colored', 'changeHeaderLogo': true, 'headerLogoDark': './genesis-red-logo.png', 'headerLogoLight': './genesis-white-logo.png'}"
+    data-plugin-options="{'targetClass': '.section-scroll', 'dotsClass': 'section-scroll-dots-navigation-colored', 'changeHeaderLogo': true, 'headerLogoDark': './genesis-red-logo-icon.png', 'headerLogoLight': './genesis-red-logo.png'}"
   >
     <!-- <div class="loader-bg">
       <lottie-player
@@ -118,6 +118,7 @@
       <header
         id="header"
         class="header-transparent"
+        style="background-color: white; height: fit-content"
         data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 0}"
       >
         <div class="header-body border-top-0 box-shadow-none">
@@ -141,7 +142,11 @@
                       class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-transition header-nav-main-effect-2 header-nav-main-sub-effect-1 px-3"
                     >
                       <nav class="collapse">
-                        <ul class="nav nav-pills show-on-scroll" id="mainNav">
+                        <ul
+                          class="nav nav-pills show-on-scroll"
+                          id="mainNav"
+                          style="color: black"
+                        >
                           <li><a href="index.html">HOME</a></li>
                           <li><a href="#1" data-nav-id="1">WHAT WE DO</a></li>
                           <li><a href="#2" data-nav-id="2">OUR STORY</a></li>
@@ -223,59 +228,90 @@
             <div id="hero-part" class="row h-100">
               <div
                 class="col-md-6 p-0"
-                style="
-                  background-image: linear-gradient(180deg, #ff0000, #4c0202);
-                "
+                style="background-color: black; width: 100%"
               >
                 <div class="row h-100" style="background: transparent">
                   <div
-                    class="col-12 h-50 p-0 px-4 px-lg-0 appear-animation"
+                    class="col-12 p-0 px-4 px-lg-0 appear-animation"
                     data-appear-animation="fadeInRightShorter"
                     data-appear-animation-delay="1200"
+                    style="height: 21%"
+                  ></div>
+                  <div
+                    class="col-12 p-0 px-4 px-lg-0 appear-animation"
+                    data-appear-animation="fadeInRightShorter"
+                    data-appear-animation-delay="1000"
+                    style="
+                      background: transparent;
+                      height: 80vh;
+                      position: relative;
+                    "
                   >
-                    <div class="row align-items-end justify-content-end h-100">
-                      <div class="col-half-section col-half-section-left">
+                    <div
+                      class="video-container"
+                      style="position: absolute; width: 105vw"
+                    >
+                      <div
+                        id="overlay"
+                        style="
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          background: #000000a3;
+                        "
+                      ></div>
+                      <video
+                        src="./bgvideo.mp4"
+                        muted
+                        autoplay
+                        loop
+                        style="object-fit: fill; width: 105vw"
+                      ></video>
+                    </div>
+                    <div class="row justify-content-center h-100">
+                      <div
+                        class="col-half-section col-half-section-left"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                      >
                         <div class="row">
                           <div class="col">
                             <h1
                               class="font-weight-extra-bold text-color-light text-md-10 text-lg-12 line-height-2 mb-4 pb-2 appear-animation"
                               data-appear-animation="fadeInRightShorter"
                               data-appear-animation-delay="1400"
+                              style="text-align: center"
                             >
                               Genesis NextGen Consulting
                             </h1>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 h-50 p-0 px-4 px-lg-0 appear-animation"
-                    data-appear-animation="fadeInRightShorter"
-                    data-appear-animation-delay="1000"
-                    style="background: transparent"
-                  >
-                    <div class="row justify-content-end h-100">
-                      <div class="col-half-section col-half-section-left">
-                        <div class="row">
-                          <div class="col">
                             <p
                               class="text-color-light text-4 my-4 pt-2 appear-animation"
                               data-appear-animation="fadeInRightShorter"
                               data-appear-animation-delay="1600"
+                              style="text-align: center"
                             >
-                              ADVISORY & CONSULTING | RECRUITMENT | TRAINING AND
-                              DEVELOPMENT | SMALL AND MEDIUM ENTERPRISE
-                              DEVELOPMENT
+                              Boutique management consulting and advisory firm
+                              based across East Africa serving private, public
+                              and development sectors.
                             </p>
                             <div
                               class="appear-animation"
                               data-appear-animation="fadeInRightShorter"
                               data-appear-animation-delay="1800"
+                              style="display: flex; justify-content: center"
                             >
                               <a
                                 href="#"
                                 class="btn btn-dark font-weight-bold text-3 rounded-0 px-5 btn-py-3 align-items-center d-inline-flex"
+                                style="
+                                  border: none;
+                                  background-color: #e01f2687;
+                                  color: white;
+                                  border-radius: 36px !important;
+                                "
                                 >Welcome to Your Future
                                 <i class="fas fa-arrow-right text-5 ms-3"></i
                               ></a>

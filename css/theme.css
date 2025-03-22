@@ -3195,7 +3195,7 @@ html.sticky-header-enabled.sticky-header-active
 
   #header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a,
   #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
-    color: var(--light);
+    color: var(--dark);
   }
 
   #header
@@ -6963,7 +6963,7 @@ html.sticky-header-enabled.sticky-header-active
 }
 
 body[data-plugin-section-scroll] #header .header-body {
-  background: transparent;
+  background: white;
 }
 
 html[dir="rtl"] #header .header-search .btn-light {

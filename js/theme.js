@@ -7674,7 +7674,7 @@ window.theme.fn = {
     dotsNav: true,
     changeHeaderLogo: true,
     headerLogoDark: "../genesis-white-logo.png",
-    headerLogoLight: "../genesis-red-logo.png",
+    headerLogoLight: "",
   };
 
   // expose to scope
